@@ -24,3 +24,6 @@ yarn-error.log*
 
 #ignore all of the css files
 /src/**/*.css
+
+//mongo database
+/server/config/dev.js
