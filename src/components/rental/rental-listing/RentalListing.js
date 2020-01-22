@@ -5,12 +5,14 @@ import * as actions from '../../../actions';
 
 class RentalListing extends Component {
  
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.props.dispatch(actions.fetchRentals());
+         
     }
 
-    render(){
+    
 
+    render(){
         return(
             <section id='rentalListing'>
                 <h1 className='page-title'>Your Home All Around the World</h1>

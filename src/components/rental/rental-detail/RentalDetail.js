@@ -4,9 +4,10 @@ import * as actions from '../../../actions';
 
 class RentalDetail extends Component {
     
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         //Dispatch action
         const rentalId = this.props.match.params.id
+        console.log(rentalId)
         this.props.dispatch(actions.fetchRentalById(rentalId))
     }
 
