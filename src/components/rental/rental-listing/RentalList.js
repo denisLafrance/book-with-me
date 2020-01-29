@@ -9,7 +9,7 @@ class RentalList extends Component {
                 <RentalCard 
                     rentals={rental} 
                     key={index} 
-                    colNum='col-md-3 col-xs-6'
+                    colNum='col-md-4 col-xs-6'
                 />
                 
             )
