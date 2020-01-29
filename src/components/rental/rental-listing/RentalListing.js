@@ -3,10 +3,13 @@ import RentalList from '././RentalList';
 import { connect } from 'react-redux';
 import * as actions from '../../../actions';
 
+
+
+
 class RentalListing extends Component {
  
     UNSAFE_componentWillMount() {
-        this.props.dispatch(actions.fetchRentals());
+       this.props.dispatch(actions.fetchRentals());
          
     }
 
@@ -17,7 +20,6 @@ class RentalListing extends Component {
             <section id='rentalListing'>
                 <h1 className='page-title'>Your Home All Around the World</h1>
                 <RentalList rentals={this.props.rentals} />
-                
           </section>
         )
     }
