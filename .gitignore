@@ -27,3 +27,4 @@ yarn-error.log*
 
 //mongo database
 /server/config/dev.js
+/.vscode
