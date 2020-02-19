@@ -36,3 +36,5 @@ export const selectedRentalReducer = (state = INITIAL_STATE.rental, action) => {
             return state;
     }
 }
+
+

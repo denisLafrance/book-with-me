@@ -1,13 +1,29 @@
+// SCSS variables
 @import './variables';
+
+// Header SCSS file call
 @import './Header/header';
 
+// Rental SCSS file call
 @import './rental/rental-listing';
 @import './rental/rental-detail';
 
+// Form SCSS file call
+@import './form/form';
+
+
+
+// GLOBAL SCSS
 .page-title{
     font-size:30px;
     font-weight:700;
     margin-bottom:20px;
+}
+
+.clickable {
+    &:hover {
+       cursor:pointer; 
+    }
 }
 
 .apartment {
@@ -20,4 +36,17 @@
 
 .condo {
     color:#d68000;
+}
+
+.btn-bwm {
+    background-color: $main-color !important;
+    border-color:$main-color !important;
+    color: white;
+    padding:15px 30px;
+    font-size:20px;
+
+    &:hover, &:focus, &:active {
+        border-color:$main-color !important;
+        background-color: $main-color !important;
+    }
 }
