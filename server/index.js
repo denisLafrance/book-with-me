@@ -19,7 +19,7 @@ const rentalRoutes = require('./routes/rentals'),
 mongoose.connect(config.DB_URI, { useUnifiedTopology: true, useNewUrlParser: true })
     .then( () => {
         const fakeDb = new FakeDb();
-        fakeDb.seedDB();
+       // fakeDb.seedDB();
     })
 
 const app = express();
