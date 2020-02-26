@@ -12,14 +12,15 @@ const FakeDb = require('./fake-db');
 
 //Routes
 const rentalRoutes = require('./routes/rentals'),
-        userRoutes = require('./routes/users');
+        userRoutes = require('./routes/users'),
+        bookingRoutes = require('./routes/bookings');
 
 
 
 mongoose.connect(config.DB_URI, { useUnifiedTopology: true, useNewUrlParser: true })
     .then( () => {
         const fakeDb = new FakeDb();
-       // fakeDb.seedDB();
+        //fakeDb.seedDB();
     })
 
 const app = express();
@@ -29,7 +30,8 @@ app.use(bodyParser.json());
 
 // RESTFUL routes
 app.use('/api/v1/rentals', rentalRoutes);
-app.use('/api/v1/users', userRoutes)
+app.use('/api/v1/users', userRoutes);
+app.use('/api/v1/bookings', bookingRoutes)
 
 
 const PORT = process.env.PORT || 3001
