@@ -34,10 +34,10 @@ class Login extends Component {
         
         const {isAuth, errors} = this.props.auth;
         const { successRegister } = this.props.location.state || false;
-        var username = this.state.userName;
+       // var username = this.state.userName;
 
         if(isAuth) {
-            return <Redirect to={{pathname: "/rentals", state:{username}}} />
+            return <Redirect to={{pathname: "/rentals"}} />
         } 
         
 
